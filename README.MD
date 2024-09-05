@@ -21,13 +21,15 @@
     pip install -r requirements.txt
     ```
 
-3. Apply migrations:
+3. Create your `.env` file from `.env.example` and insert the values for the environment variables.
+
+4. Apply migrations:
 
     ```bash
     python manage.py migrate
     ```
 
-4. Run the development server:
+5. Run the development server:
 
     ```bash
     python manage.py runserver
