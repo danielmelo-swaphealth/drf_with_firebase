@@ -1,0 +1,45 @@
+# Byte-compiled Python files
+__pycache__/
+*.pyc
+db.sqlite3
+db*
+firebase_cred.json
+
+# Python log files
+*.log
+db.sqlite3
+
+# Environment settings
+.env
+# Virtual environment
+venv/
+.vscode/
+.idea/
+.pytest_cache/
+
+# Database
+
+# Media and static files
+media/
+
+# Secret keys and sensitive information (modify as needed)
+*.secret_key
+*.settings
+
+# Backup files
+*~
+
+# Local development files
+*.db
+*.sql
+
+
+# Visual Studio Code
+.vscode/
+
+# Python environment configuration
+pyvenv.cfg
+
+# macOS Finder metadata
+.DS_Store
+env

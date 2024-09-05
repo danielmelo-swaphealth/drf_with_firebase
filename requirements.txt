@@ -1,0 +1,11 @@
+django
+djangorestframework
+python-decouple
+pyrebase4
+firebase-admin
+django-cors-headers
+whitenoise
+drf-yasg
+celery
+redis
+python-dotenv
