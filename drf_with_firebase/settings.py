@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 import pyrebase
+import os
 from decouple import config as env_config 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -130,10 +131,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Firebase settings
 try:
     config = {
-        "apiKey": "AIzaSyAlkmOtePxk2080B5KEG5967yKAo8o-wEY",
-        "authDomain": "toyproject-9c28d.firebaseapp.com",
-        "databaseURL": "",
-        "storageBucket": "toyproject-9c28d.appspot.com",
+        "apiKey": os.getenv("FIREBASE_API_KEY"),
+        "authDomain": os.getenv("FIREBASE_AUTH_DOMAIN"),
+        "databaseURL": os.getenv("FIREBASE_DATABASE_URL"),
+        "storageBucket": os.getenv("FIREBASE_STORAGE_BUCKET"),
     }
     firebase = pyrebase.initialize_app(config)
     auth = firebase.auth()
