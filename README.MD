@@ -11,7 +11,7 @@
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/blabla.git
+    git clone https://github.com/danielmelo-swaphealth/drf_with_firebase.git
     cd your-repository
     ```
 
